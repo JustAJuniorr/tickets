@@ -1,25 +1,176 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo general del cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('https://thumbs.dreamstime.com/b/foto-blanco-y-negro-de-la-mujer-hermosa-51980900.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
 }
 
-.container {
-    margin: 50px auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Encabezado */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Estilo del logo */
+.header .logo img {
+  max-width: 100px;
+  height: auto;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Barra de navegación */
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+/* Enlaces de navegación */
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff4500;
+}
+
+/* Sección de héroe */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+/* Estilo del título en la sección de héroe */
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilo del párrafo en la sección de héroe */
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Estilo del botón en la sección de héroe */
+.hero .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #333;
+}
+
+/* Sección de productos destacados */
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  flex: 0 0 calc(33.3333% - 20px);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para redes sociales en el pie de página */
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Efecto hover para enlaces de navegación */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; /* Transición de velocidad media */
+}
+
+.navbar a:hover {
+  color: #ff4500;
+}
+
+/* Efecto hover para el botón en la sección de héroe */
+.hero .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out; /* Transición de velocidad media */
+  margin-top: 20px;
+}
+
+.hero .btn:hover {
+  background-color: #333;
 }
